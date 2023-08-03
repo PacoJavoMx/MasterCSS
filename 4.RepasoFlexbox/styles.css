@@ -1,0 +1,54 @@
+body{
+    background: beige;
+}
+
+.flex-container{
+    border: 1px solid black;
+    background: #ccc;
+    padding: 20px;
+    display: flex;
+    /*flex-direction: row; La propiedad flex-direction especifica coómo colocar los objetos flexibles en el contenedor flexible definiendo el eje principal y dirección (normal o al revés) */
+                                    /*row-reverse se comporta igual que row pero los puntos principales de inicia y final son intercambiados*/
+    /*flex-wrap: wrap;   flex-wrap especifica si los elementos "hijos son obligados a permanecer en una misma linea o puede fluir en varia líneas*/
+    flex-flow: row wrap;        /*flex flow es una propiedad atajo para las propiedades individuales flex-direction y flex-wrap*/
+    justify-content: center; /*justify-content define como el navegador distribuye el espacio entre y alrededor de los items flex, a lo largo del eje principal de su contenedor*/
+    /*align-items: center; /*align-items establece el valor align-self sobre todos los descendientes diretos de un grupo | */
+    align-content: center; /*align-content ajusta las líneas dentro de un contenedor flex cuando hay un espacio extra en el eje transversal*/
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+        }
+
+.caja{
+    border: 1px solid rgb(70,69,69);
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    /*width: 200px;*/
+    /*height: 120px;*/
+    line-height: 200px;
+    text-align: center;
+    margin: 5px;
+    float: left;
+
+}
+
+.c1{
+    background-color: lightblue;
+    order: 2;       /*order especifica el orden utilizado para disponer los elementos en el contenedor flexible*/
+    flex-grow: 1;   /*flex grow especifica el factor de crecimiento de un elemento flexible (que tiene asignado display:flex)*/
+    flex-basis: 50%; /*flex-basis específica la base flexible, la cual es el tamaño inicial de un elemento flexible*/
+}
+
+.c2{
+    background-color: lightcoral;
+    order: 3;
+    flex-grow: 1;
+}
+
+.c3{
+    background-color: lightgreen;
+    order: 1;
+    flex-grow: 1;
+}

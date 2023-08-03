@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px; /*La propiedad padding establece el área de relleno en los cuatro lados de un elemento a la vez*/
+}
+
+body{
+    background: lightgray; /*background es un atajo para definir los valores individuales del fondo en una unica regla CSS*/
+    font-family: Arial, Helvetica, sans-serif; /*Font family define una lista de fuentes o familias de fuentes, con un orden de prioridad, para utilizar un elemento seleccionado*/
+}
+
+#container{
+    /* width: 70%;*/ /*La propiedad width establece el ancho de un elemento*/
+    width: 1100px;
+    margin: 0px auto; /*La propiedad margin establece el margen para los cuatro lados*/
+    border: 1px solid black; /*La propiedad border permite definir en una única regla todos los bordes de los elementos seleccionados*/
+}
+
+header{
+    background: red;
+    height: 100px; /*La propiedad height especifica la altura de un elemento*/
+    width: 100%;
+    margin: 0px;
+    text-align: center; /*La propiedad text-align establece la alineación horizontal del contenido de nivel en línea dentro de un elemento de bloque*/
+    line-height: 100px; /*La propiedad line-height establece la altura de un cuadro de línea*/
+    color:white; /*La propiedad color es para el texto*/
+    border-bottom: 3px dashed black; /*Border-bottom permite definir de una vez propiedades individuales*/
+}
+
+nav{
+    background: lightblue;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+nav ul li{
+    float: left; /*La propiedad float ubica un elemento al lado izq o derecho de su contenedor, permitiendo a los elementos de texto y en línea aparecer a su costado*/
+    list-style: none; /*list-style permite definir parámetros*/
+    margin: 10px;
+    line-height: 30px;
+}
+
+.clearfix{
+    clear: both; /*La propiedad clear especifica si un elemento puede estar a lado de elementos flotantes que lo preceden o si debe ser movido (cleared) debajo de ellos*/
+}
+
+#content{
+    float:left;
+    width: calc(80% - 80px);
+    min-height: 500px; /*La propiedad min-height se utiliza para definir la altura minima de un elemento dado*/
+    background: green;
+    padding: 40px;
+}
+
+.article{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px; /*Padding bottom establece el espacio de relleno requerido en la parte inferior del elemento*/
+    border-bottom: 1px solid #eee;
+}
+
+.article:first-child{ /*La pseudo-clase first-chil representa el primer elemento entre un grupo de elementos hermanos*/
+    padding-top: 10px;
+    border-top: 1px solid #eee; /*Border-top establece propiedas las caracteristicas del border superior de un elemento*/
+}
+
+.article h2{
+    font-size: 25px; /*font-size especifica la dimensión de la letra*/
+}
+aside{
+    float: left;
+    width: calc(20% - 20px); /*La propiedad calc() se puede realizar calculos para determinar valores de propiedades CSS*/
+    background: orange;
+    min-height: 500px;
+    padding-left: 10px; /*padding-left establece el ancho del área del relleno a la izquierda de un elemento*/
+    padding-right: 10px; /*padding-right establece el ancho del área del relleno a la derecha de un elemento*/
+    padding-top: 20px; /*padding-top establece el el espacio relleno requerido en la parte superior del elemento*/
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}

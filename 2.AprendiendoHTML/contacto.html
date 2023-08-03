@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contacto Francisco</title>
+    </head>
+    <body>
+        <h1>Página de contacto</h1>
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a> <!--<a> crea un hipervinculo a otras páginas web, archivos, ubicaciones dentro de la misma página
+                                su atributo href indica a que página quiero que me lleve cuando de click-->
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <h1>Tablas</h1>
+        <table border="1">     <!--<table> representa datos en dos o más dimensiones su atributo border para que lo defina en toda la tabla-->
+            <tr>               <!--<tr> define una fila de celdas en una tabla-->
+                <td>Nombre</td>           <!--<td> define la celda de una tabla que contiene datos-->
+                <td>Apellidos</td>  
+                <td>Web</td>
+            </tr>
+            
+            <tr>               
+                <td>Francisco</td>
+                <td>Alarcon</td>  
+                <td>franciscoj.alarcona@gmail.com</td>
+            </tr>
+
+            <tr>               
+                <td>Victor</td>
+                <td>Robles</td>  
+                <td>victorroblesweb.es</td>
+            </tr>
+
+            <tr>               
+                <td>Daisy</td>
+                <td>Daisy</td>  
+                <td>perritacoqueta@gmail.com</td>
+            </tr>
+        </table>
+
+        <h1>Formulario de contacto</h1>
+        <p>Formulario de contacto</p>
+
+        <form>                          <!--form representa una sección de un documento que contiene controles interactivos que permiten al usuario enviar información a un servidor web-->
+              <label>Nombre</label>     <!--label representa una etiqueta para un elemento en una interfaz de usuario-->
+              <input type="text">       <!--input se usa para crear controles interactivos para formularios basados en la web con el fin de recibir datos del usuario-->
+              
+              <br>
+              
+              <label>Apellidos</label>
+              <input type="text">
+              
+              <br>
+              
+              <label>Email</label>
+              <input type="email">
+
+              <select>                <!--select representa un control que muestra un menu de opciones-->
+                    <option value="hombre">Hombre</option> <!--option se usa para representar un item dentro de un select, value representa el valor que sera enviado al enviar el formulario si una
+                                                            determinada opción está seleccionada-->
+                    <option value="mujer">Mujer</option>
+              </select>
+
+              <input type="submit" value="Enviar">  <!--el tipo submit es un botón que envía el formulario-->
+    </body>
+</html>

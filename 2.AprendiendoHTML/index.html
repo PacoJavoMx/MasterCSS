@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!-- Si se le indica DOCTYPE HTML, va estar utilizando la ultima versión, la HTML5 -->
+
+<html>          <!-- La etiqueta HTML, lo que va hacer es Guardar y va definir toda la página web-->
+
+    <head>      <!-- El head es donde van ir todos los metadatos o todo el contenido que no se va ver realmente en la página web,
+                sino que van a ser datos que le van a interesar al navegador, pero el usuario no lo va a ver como tal-->
+        
+            <meta charset="utf-8 " /> <!--El charset es para que los textos que nostros pongamos estén en español y HTMl reconozca las ñ, tildes, etc.-->
+            <title>HTML Francisco</title> <!--title se utiliza para ver la información en la pestaña del navegador-->
+    </head>
+    <body>  <!--body es todo aquello que si queremos que lo vea el usuario, que si que se va mostrar en el cuerpo de la página web.-->
+
+        <h1>Encabezado de esta página</h1> <!--Define el encabezado de la página-->
+        <h2>Encabezado de esta página</h2> <!--h1 es el más grande, mientras que el h6 es el más pequeño-->
+        
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a> <!--<a> crea un hipervinculo a otras páginas web, archivos, ubicaciones dentro de la misma página
+                                su atributo href indica a que página quiero que me lleve cuando de click-->
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <p>Todo el texto que yo quiera  </p> <!-- la etiqueta p es el apropiado para distribuir el texto en párrafos-->
+        <p>Todo el texto que yo quiera  </p> <!--La etiqueta p ya contiene el salto de línea-->
+
+            Todo el texto que yo quiera <br/> <!--br es un salto de línea-->
+            Todo el texto que yo quiera
+        
+        <hr> <!--hr nos crea y muestra una línea separadora-->
+
+        <h1>Listados</h1>
+        
+
+        <h2>Lista desordenada</h2>
+        <ul>    <!--ul crea una lista desordenada -->
+            <li>Adidas</li>
+            <li>Nike</li>
+            <li>Puma</li>
+            <li>Reebok</li>
+        </ul>
+
+        <h2>Lista ordenada</h2>
+        <ol>    <!--ul crea una lista desordenada -->
+            <li>Adidas</li>
+            <li>Nike</li>
+            <li>Puma</li>
+            <li>Reebok</li>
+        </ol>
+
+        <hr>
+        <h1>Imagenes</h1>
+
+        <img width="150px"alt="Esto es un perro" src="data:image/jpeg;base64,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" /> 
+        <!--img es la etiqueta para insertar una imagen alt es un atributo para darle valores extras a la etiqueta src es para indicar el origen de la imagen width permite ponerle tamaño a la imagen, en este caso 150 px-->
+        <img width="150 px" alt="Daisy" src="img/daisy.JPG" /> <!--La imagen de Daisy esta remotamente en el ordenador.-->
+
+    </body>
+</html>

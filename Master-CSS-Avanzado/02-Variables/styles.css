@@ -1,0 +1,24 @@
+/*La pseudoclase root lo que hace es seleccionar el elemento raiz que representa todo el documento. root representa todo el HTML*/
+:root{
+    --color-principal: red;
+    --fuente: Verdana;
+    --fuente-size: 35px;
+}
+
+h1{
+    color: var(--color-principal);
+    font-family: var(--fuente);
+    font-size: var(--fuente-size);
+}
+
+p{
+font-family: var(--fuente);
+}
+
+a{
+    color: var(--color-principal);
+}
+
+h3{
+    font-size: var(--fuente-size);
+}
