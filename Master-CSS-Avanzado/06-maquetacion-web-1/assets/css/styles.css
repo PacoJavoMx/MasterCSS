@@ -676,3 +676,8 @@ body{
     line-height: 5rem;
     color: var(--color-subtitle)
 }
+
+/*CURRICULUM*/
+.resume__header{
+    width: 100%;
+}
