@@ -690,6 +690,12 @@ body{
     margin-right: 1.5rem;
 }
 
+.timelines__item{
+    position: relative;
+    width: 100%;
+
+    display: flex;
+}
 
 /*CURRICULUM DERECHA*/
 .resume__right{
