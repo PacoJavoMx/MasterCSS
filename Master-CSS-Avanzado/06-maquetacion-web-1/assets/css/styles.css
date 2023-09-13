@@ -684,3 +684,14 @@ body{
 }
 
 /*CURRICULUM IZQUIERDO*/
+
+.resume__left{
+    flex-basis: 58%;
+    margin-right: 1.5rem;
+}
+
+
+/*CURRICULUM DERECHA*/
+.resume__right{
+    flex-basis: 41%;
+}
